@@ -41,6 +41,9 @@ type ListServersDetailsRequest struct {
 
 	// IPv4地址过滤结果，匹配规则为精确匹配。
 	IpEq *string `json:"ip_eq,omitempty"`
+
+	// AZ
+	AZ *string `json:"availability_zone,omitempty"`
 }
 
 func (o ListServersDetailsRequest) String() string {
